@@ -1,0 +1,10 @@
+image: astrabert/dockerized-vue:latest
+
+ports:
+  - name: app
+    port: 8080
+    onOpen: notify
+
+tasks:
+  - init: |
+      vue create speckle-demo-app
